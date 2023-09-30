@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #292222;
+    background-color: #73454a;
     color: white;
 }
 
@@ -131,5 +131,6 @@ nav a {
 
 
 nav {
-    margin-left: auto; /
+    margin-left: auto; 
+    margin-top: 20px;
 }
