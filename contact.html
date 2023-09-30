@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a href="https://admbonny.github.io/Phase-0-Personal-website/"> Contact</a>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script> <!-- Include your JavaScript file here -->
-    <title>Contact Me</title>
+    <script src="index.js" defer></script>
+    <title>Contact Me - Portfolio</title>
 </head>
 <body class="contact">
     <header>
         <h1>Contact Me</h1>
+        <header>
+            <h1>Your Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
     </header>
-    <section class="content">
-        <div class="contact-info">
-            <p>Email: bonventureoanda@gmail.com</p>
-            <p>Address: 41733-00100</p>
-            <p>Phone: +254798299785</p>
-        </div>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Email" id="email" required>
-            <textarea placeholder="Message" id="message" required></textarea>
-            <button id="message-button">Message Me</button>
-        </form>
-    </section>
+    <main>
+        <section class="contact-info">
+            <img src="contact-image.jpg" alt="Contact Image">
+            <div class="info">
+                <p>Email: bonventureoanda.com</p>
+                <p>Address: 42733-00100, Nairoi, Kenya</p>
+                <p>Phone: +254798299785</p>
+            </div>
+        </section>
+        <section class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button id="send-button">Message Me</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
+
