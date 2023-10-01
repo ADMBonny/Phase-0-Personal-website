@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #930a1a;
+    background-color: #34070c;
     color: white;
 }
 
@@ -12,7 +12,7 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    
 }
 
 main {
@@ -22,17 +22,26 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Home Page specific styles */
+
 .home .intro {
-    flex: 2;
+    flex: 1; /* Occupy 50% of the left side */
+    padding-right: 20px; /* Add spacing between text and image */
 }
 
 .home .image {
-    flex: 1;
+    flex: 1; /* Occupy 50% of the right side */
     text-align: center;
 }
+
+.home .image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    max-height: 500px; /* Limit the image height, adjust as needed */
+}    
 
 /* About Page specific styles */
 .about .about-content {
@@ -61,6 +70,7 @@ main {
     padding: 20px;
     background-color: #333;
     border-radius: 5px;
+    margin-left: 20px;
 }
 
 .contact .contact-form form {
@@ -95,12 +105,6 @@ main {
     cursor: pointer;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
-}
 
 
 /* Style the header */
@@ -111,7 +115,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    margin-top: 20px;
+    
 }
 
 /* Style the nav */
